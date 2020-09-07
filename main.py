@@ -23,7 +23,12 @@ def mainBar():
             EnDeCode.encode()
 
         elif askString == commands[3]:
-            EnDeCode.decode()
+        	try:
+        		f = open('img_encoded.bmp', 'rb')
+        		f.close()
+        		EnDeCode.decode()
+        	except:
+        		print('Файл еще не создан')
 
         else:
             print('Command not found')

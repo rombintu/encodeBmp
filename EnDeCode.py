@@ -173,7 +173,7 @@ def decode():
         print('Что то пошло не так, попробуйте снова')
         return
 
-    showOFF = input("Покзать процесс? (y): ")
+    showOFF = input("Показать процесс? (y): ")
 
     # Счетчик просчитанных символов
     countRead = 0
@@ -193,7 +193,7 @@ def decode():
     checkMaxSize(level)
 
     # Open all Files
-    secret = open('secret_decode.txt', 'w', encoding='utf-8')
+    secret = open('secret_decode.txt', 'w')
     img_encoded = open('img_encoded.bmp', 'rb')
 
     # Пропускаем первые 54 бита
